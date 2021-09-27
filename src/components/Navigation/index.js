@@ -4,19 +4,19 @@ import Logo from '../../assets/logo/parr-moto-logo.svg';
 
 function Navigation() {
   return (
-    <Navbar fixed='top' bg='dark'>
-      <Container className='mx-5' fluid>
-        <Navbar.Brand href='#home' style={{ width: '150px' }}>
-          <Image src={Logo} />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id='basic-navbar-nav' className='justify-content-end'>
-          <Nav.Link href='#what-we-do'>what we do</Nav.Link>
-          <Nav.Link href='#our-work'>our work</Nav.Link>
-          <Nav.Link href='#meet-the-team'>meet the team</Nav.Link>
-          <Nav.Link href='#contact'>contact</Nav.Link>
-        </Navbar.Collapse>
-      </Container>
+    <Navbar fixed='top' expand='lg' bg='dark' className='px-5'>
+      <Navbar.Brand href='#home' style={{ width: '150px' }}>
+        <Image src={Logo} />
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id='basic-navbar-nav' className='justify-content-end'>
+        <Nav>
+          <Nav.Link href='#what-we-do' className='nav-links'>what we do</Nav.Link>
+          <Nav.Link href='#our-work' className='nav-links'>our work</Nav.Link>
+          <Nav.Link href='#meet-the-team' className='nav-links'>meet the team</Nav.Link>
+          <Nav.Link href='#contact' className='nav-links'>contact</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
     </Navbar>
   );
 }
