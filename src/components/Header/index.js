@@ -1,15 +1,19 @@
 import React from 'react';
-import { Button, Col, Container, Nav, Row } from 'react-bootstrap';
+import { Col, Container, Nav, Row } from 'react-bootstrap';
 import headerImage from '../../assets/header-image/header-image.jpg';
 
 function Header() {
     return(
-        <Container as='header' fluid className='Jumbotron d-flex flex-column justify-content-center align-items-center' >
+        <Container id='home' as='header' fluid className='Jumbotron d-flex flex-column justify-content-center align-items-center' >
             <Row className='text-center justify-content-center'>
-                <h1>driving retail forward</h1>
-                <p className='w-50'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
+                <Col xs={12} md={8}>
+                    <h1>
+                        driving retail forward
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </Col>
             </Row>
             <Row className='justify-content-center w-100'>
                 <Nav className='my-4 justify-content-center'>

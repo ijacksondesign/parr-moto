@@ -1,10 +1,10 @@
 import React from 'react';
-import { Container, Image, Nav, Navbar } from 'react-bootstrap';
+import { Image, Nav, Navbar } from 'react-bootstrap';
 import Logo from '../../assets/logo/parr-moto-logo.svg';
 
 function Navigation() {
   return (
-    <Navbar fixed='top' expand='lg' bg='dark' className='px-5'>
+    <Navbar fixed='top' expand='lg' className='px-5 py-4'>
       <Navbar.Brand href='#home' style={{ width: '150px' }}>
         <Image src={Logo} />
       </Navbar.Brand>
