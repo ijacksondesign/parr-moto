@@ -9,7 +9,7 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <Container className='p-0' style={{ backgroundColor: 'black', minHeight: '100vh' }} fluid>
+    <Container className='p-0' style={{ backgroundColor: '#1a1a1a', minHeight: '100vh' }} fluid>
       <Navigation />
       <Header />
       <WhatWeDo />

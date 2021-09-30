@@ -17,6 +17,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.navbar-scrolled {
+  background: #1a1a1a;
+  transition: 1s;
+}
+
 a.nav-links {
   color: white !important;
   font: 1.25rem Teko, sans-serif;
