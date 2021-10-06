@@ -33,8 +33,8 @@ function OurWork() {
     ]);
 
     return(
-        <Container id='our-work' as='section' className='p-5' fluid>
-            <Row className='px-5 justify-content-center align-items-center'>
+        <Container id='our-work' as='section' className='py-5 py-md-5 p-md-5' fluid>
+            <Row className='justify-content-center align-items-center' fluid>
                 <Col xs={12} md={3} className='d-flex flex-column justify-content-center align-items-start'>
                     <h2 className='text-secondary'>
                         our work
@@ -56,7 +56,7 @@ function OurWork() {
                 </Col>
                 <Col xs={12} md={9}>
                     <Container fluid>
-                        <Row className='w-100 justify-content-center'>
+                        <Row className='justify-content-center'>
                             {portfolio.map((project) => (
                                 <Col xs={12} md={3} className='m-2' style={{ backgroundColor: '#b0b3b2', height:'300px' }}>
                                     <p className='text-light'>{project.name}</p>

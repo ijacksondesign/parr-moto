@@ -38,7 +38,7 @@ function Team() {
     ]);
 
     return(
-        <Container id='team' className='flex-column justify-content-center'  fluid>
+        <Container id='team' as='section' className='p-5 flex-column justify-content-center' fluid>
             <Row className='flex-column justify-content-center'>
                 <Col className='d-flex flex-column justify-content-center'>
                     <h2 className='text-secondary text-center'>
@@ -47,11 +47,14 @@ function Team() {
                     <hr className='mt-2 mb-4 mx-auto' />
                 </Col>
             </Row>
-            <Row className='px-3 justify-content-center'>
+            <Row className='justify-content-center'>
                 {team.map((member) => (
-                    <Col xs={12} md={3} className='m-2' style={{ backgroundColor: '#b0b3b2', height:'300px' }}>
-                        <p className='text-light'>{member.name}</p>
-                        <p className='text-light'>{member.title}</p>
+                    <Col xs={12} md={4} lg={3} className='m-2' style={{ backgroundColor: '#b0b3b2', height:'200px' }}>
+                        <p className='text-light text-center'>
+                            {member.name}
+                            <br />
+                            {member.title}
+                        </p>
                     </Col>
                 ))}
             </Row>

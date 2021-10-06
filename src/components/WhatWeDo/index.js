@@ -31,12 +31,12 @@ function WhatWeDo() {
     ]);
 
     return(
-        <Container id='what-we-do' as='section' className='p-5' style={{ backgroundColor: 'white' }} fluid>
-            <Row className='px-5 justify-content-center'>
+        <Container id='what-we-do' as='section' className='py-4 py-md-5 position-relative' style={{ backgroundColor: 'white' }} fluid>
+            <Row className='justify-content-center position-relative z-index-2'>
                 <Col xs={12} md={6}>
                     <Image src={whatWeDoImage} className='w-100' />
                 </Col>
-                <Col xs={12} md={4} className='d-flex flex-column justify-content-center align-items-start mx-5'>
+                <Col xs={12} md={4} className='d-flex flex-column justify-content-center align-items-start mt-5 mt-md-0 px-3 px-md-5'>
                     <h2 className='text-secondary'>
                         what we do
                     </h2>
@@ -44,8 +44,8 @@ function WhatWeDo() {
                     <p className='text-dark'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
-                    <p className='text-dark w-100' style={{ columnCount: 2 }}>
-                        <ul className='ps-4'>
+                    <p className='text-dark w-100'>
+                        <ul className='ps-4' style={{ columnCount: 2 }}>
                             {services.map((service) => (
                                 <li>{service.service}</li>
                             ))}
@@ -53,6 +53,7 @@ function WhatWeDo() {
                     </p>
                 </Col>
             </Row>
+            <Row className='w-50 h-100 position-absolute top-0 start-0 z-index-1 slanted-background-left' style={{ height: '200px', backgroundColor: '#cc9f53' }} />
         </Container>
     );
 }

@@ -23,6 +23,11 @@ body {
   transition: 1s;
 }
 
+.navbar-unscrolled {
+  background: transparent;
+  transition: 1s;
+}
+
 a.nav-links {
   color: white !important;
   font: 1.25rem Teko, sans-serif;
@@ -93,4 +98,24 @@ hr {
 
 .unslant-text {
   transform: skewX(20deg);
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.z-index-2 {
+  z-index: 2;
+}
+
+.z-index-3 {
+  z-index: 3;
+}
+
+.slanted-background-right {
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
+}
+
+.slanted-background-left {
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
 }
